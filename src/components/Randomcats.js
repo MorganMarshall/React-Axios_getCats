@@ -3,18 +3,11 @@ import React, { Component } from "react";
 import axios from "axios";
 
 export default class Randomcats extends React.Component {
-  constructor(props) {
-    super(props);
-    
-   
-
-  }
+ 
   state = {
     persons: [],
     newpersons: []
   };
-
-  
 
   handleClick() {
     axios.get(`https://aws.random.cat/meow`).then(res => {
